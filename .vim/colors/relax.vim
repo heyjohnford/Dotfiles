@@ -36,24 +36,24 @@ hi Title	  guifg=NONE		  guibg=NONE          gui=NONE
 hi Comment        guifg=#696969           gui=italic
 hi Constant       guifg=NONE           	  gui=NONE
 hi Exception      guifg=#cf6a4c           gui=NONE
-hi String         guifg=#85C9A0           gui=NONE
+hi String         guifg=#a9bdcd           gui=NONE
 hi Variable       guifg=#6E7A84           gui=NONE
-hi Number         guifg=#d28e84           gui=NONE
-hi Define         guifg=#6E7A84           gui=NONE
+hi Number         guifg=#CF6A4C           gui=NONE
+hi Define         guifg=#79849B           gui=NONE
 hi Boolean        guifg=#CF6A4C           gui=NONE
 hi Float          guifg=#cf6a4c           gui=NONE
-hi Identifier     guifg=#e5cb9c           gui=NONE
-hi Statement      guifg=#6E7A84           gui=NONE
+hi Identifier     guifg=#91877a           gui=NONE
+hi Statement      guifg=#79849B           gui=NONE
 hi Keyword        guifg=#cda869           gui=NONE
-hi PreProc        guifg=#6E7A84           gui=NONE
+hi PreProc        guifg=#79849B           gui=NONE
 hi Type           guifg=NONE		  gui=NONE		
 hi Typedef        guifg=#e5cb9c           gui=NONE
-hi Special        guifg=#85C9A0           gui=NONE
-hi SpecialChar    guifg=#6E7A84           gui=NONE
+hi Special        guifg=#a9bdcd           gui=NONE
+hi SpecialChar    guifg=#79849B           gui=NONE
 hi SpecialComment guifg=#4f94cd           gui=NONE
 hi Ignore         guifg=#848484           gui=NONE
 hi Error          guifg=#cf6a4c           guibg=NONE         gui=underline
-hi Todo           guifg=#f9ee98		      guibg=NONE         gui=bold
+hi Todo           guifg=#cda869		      guibg=NONE         gui=bold
 hi Underlined     guifg=NONE              gui=NONE
 hi Pmenu          guifg=#212121           guibg=#9ca9b7
 hi PmenuSel       guifg=#ffffff           guibg=#6c8095
@@ -80,9 +80,9 @@ hi pythonPseudoVariable  guifg=NONE guibg=NONE gui=NONE
 hi makoDelimiter  guifg=NONE guibg=NONE gui=NONE
 hi makoComment  guifg=NONE guibg=NONE gui=NONE
 "HTML
-hi htmlTag  guifg=#6E7A84 guibg=NONE gui=NONE
-hi htmlEndTag  guifg=#6E7A84 guibg=NONE gui=NONE
-hi htmlTagName  guifg=#6E7A84 guibg=NONE gui=NONE
+hi htmlTag  guifg=#79849B guibg=NONE gui=NONE
+hi htmlEndTag  guifg=#79849B guibg=NONE gui=NONE
+hi htmlTagName  guifg=#79849B guibg=NONE gui=NONE
 hi link htmlSpecialTagName htmlTag
 hi htmlArg  guifg=NONE guibg=NONE gui=NONE
 hi htmlSpecialChar  guifg=#999999 guibg=NONE gui=NONE
@@ -91,8 +91,9 @@ hi link htmlBold htmlArg
 hi javaScriptFunction  guifg=#cf6a4c guibg=NONE gui=NONE
 hi javaScriptBraces  guifg=NONE guibg=NONE gui=NONE
 hi link javaScriptType Identifier     
-hi javaScriptFunction  guifg=#9B859D guibg=NONE gui=NONE  
-hi link javaScriptFuncName Keyword
+hi javaScriptFunction  guifg=#D0D0A3 guibg=NONE gui=NONE  
+hi javaScriptFuncName  guifg=#e0e0e0 guibg=NONE gui=NONE
+hi link javaScriptParens javaScriptFuncName
 "yaml
 hi yamlKey  guifg=#4f94cd guibg=NONE gui=NONE
 hi yamlAnchor  guifg=NONE guibg=NONE gui=NONE
@@ -101,28 +102,29 @@ hi yamlDocumentHeader  guifg=#cda869 guibg=NONE gui=NONE
 hi yamlBlockMappingKey guifg=#e0e0e0 guibg=NONE gui=NONE
 hi yamlKeyValueDelimiter guifg=#e0e0e0 guibg=NONE gui=NONE
 "CSS & LESS
-hi cssTagName  guifg=#6E7A84 guibg=NONE gui=NONE
-hi cssURL  guifg=#85C9A0 guibg=NONE gui=NONE
-hi cssIdentifier  guifg=#6E7A84 guibg=NONE gui=NONE
+hi cssTagName  guifg=#79849B guibg=NONE gui=NONE
+hi cssURL  guifg=#a9bdcd guibg=NONE gui=NONE
+hi cssIdentifier  guifg=#79849B guibg=NONE gui=NONE
 hi cssFunctionName  guifg=NONE guibg=NONE gui=NONE
-hi cssColor  guifg=#85C9A0 guibg=NONE gui=NONE
-hi cssPseudoClassId  guifg=#6E7A84 guibg=NONE gui=NONE
-hi cssPseudoClass  guifg=#6E7A84 guibg=NONE gui=NONE
-hi cssClassName  guifg=#6E7A84 guibg=NONE gui=NONE
-hi cssValueLength  guifg=#9B859D guibg=NONE gui=NONE
-hi cssValueInteger  guifg=#9B859D guibg=NONE gui=NONE
-hi cssValueNumber  guifg=#9B859D guibg=NONE gui=NONE
+hi cssColor  guifg=#a9bdcd guibg=NONE gui=NONE
+hi cssPseudoClassId  guifg=#79849B guibg=NONE gui=NONE
+hi cssPseudoClass  guifg=#79849B guibg=NONE gui=NONE
+hi cssClassName  guifg=#79849B guibg=NONE gui=NONE
+hi cssValueLength  guifg=#D0D0A3 guibg=NONE gui=NONE
+hi cssValueInteger  guifg=#D0D0A3 guibg=NONE gui=NONE
+hi cssValueNumber  guifg=#D0D0A3 guibg=NONE gui=NONE
 hi link cssFunction   cssValueNumber
 hi link cssFunctionName cssCommonAttr
 hi cssCommonAttr  guifg=#e0e0e0 guibg=NONE gui=NONE
 hi cssBraces  guifg=#e0e0e0 guibg=NONE gui=NONE
 hi cssTextProp guifg=#e0e0e0 guibg=NONE gui=NONE
 hi link cssMediaBlock Define
-hi cssFontDescriptorBlock guifg=#6E7A84 guibg=NONE gui=NONE
+hi cssFontDescriptorBlock guifg=#79849B guibg=NONE gui=NONE
 hi link lessVariable   Identifier
 
 "Ruby
-hi rubyRailsUserClass guifg=#9B859D guibg=NONE gui=NONE
+hi rubyConstant guifg=#D0D0A3 guibg=NONE gui=NONE
+hi link rubyRailsUserClass rubyConstant
 hi erubyDelimiter   guifg=#e0e0e0 guibg=NONE
 
 "diff
