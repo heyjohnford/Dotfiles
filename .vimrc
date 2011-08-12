@@ -1,3 +1,14 @@
+"Filetype
+filetype on
+filetype indent on
+filetype plugin on
+syntax on
+colorscheme refined
+set background=dark
+set guifont=Menlo:h13
+"Per file-type indentation
+autocmd BufEnter *.js set softtabstop=4|set shiftwidth=4
+autocmd BufEnter *.c  set softtabstop=4|set shiftwidth=4
 "Tabs and Spaces
 set tabstop=2
 set softtabstop=2
@@ -16,15 +27,6 @@ set go-=L
 set nocompatible
 set ignorecase
 set smartcase
-"Filetype
-filetype on
-filetype indent on
-filetype plugin on
-syntax on
-colorscheme relax
-"Per file-type indentation
-autocmd BufEnter *.js set softtabstop=4|set shiftwidth=4
-autocmd BufEnter *.c  set softtabstop=4|set shiftwidth=4
 "Search
 set hlsearch
 set incsearch
@@ -36,14 +38,22 @@ map <leader>c <c-_><c-_>
 map <leader>n :NERDTree <cr>
 "Mac Environment
 if has ("gui_mac") || has("gui_macvim")
-	set transparency=1
+"	set transparency=1
 "Windows
 set columns=100
 set lines=50
 endif
-"Backup
-set backup
 "Mapping
 map <F12> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+"Backup
+set backup
+"Swap 
+set backupdir=~/.tmp,.
+set directory=~/.tmp,.
+"Errors white-space
+"let ruby_space_errors = 1
+"let c_space_errors = 1
+"let javascript_space_errors = 1
+

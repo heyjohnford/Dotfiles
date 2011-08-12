@@ -1,4 +1,4 @@
-" relax color scheme by mightymechanic
+" relax color scheme by johnamiahford
 
 set background=dark
 hi clear
@@ -6,38 +6,39 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let colors_name="relax"
+let colors_name="refined"
 
-hi Normal         guifg=#e0e0e0           guibg=#202020
-hi Cursor         guifg=#212121           guibg=#9ca9b7
-hi CursorLine	  guifg=#ffffff		  guibg=#6c8095
-hi Directory      guifg=#e0e0e0           guibg=NONE
-hi VertSplit      guifg=#b6b6b6           guibg=#a6a6a6
-hi Folded         guifg=#424242           guibg=NONE     gui=italic
-hi FoldColumn	  guifg=#9ca9b7           guibg=NONE     gui=italic
-hi vimFold	  guifg=#dee4ea		  guibg=NONE     gui=italic
+hi Normal         guifg=#ffffff           guibg=#303030
+hi Cursor         guifg=#242424           guibg=#696969
+hi CursorLine	    guifg=#a2a96f		        guibg=#242424
+hi CursorColumn   guibg=#262626           guibg=NONE
+hi LineNr         guifg=#696969           guibg=NONE          
+hi Directory      guifg=#ffffff           guibg=NONE
+hi VertSplit      guifg=#242424           guibg=#696969
+hi Folded         guifg=#424242           guibg=NONE          gui=italic
+hi FoldColumn	    guifg=#9ca9b7           guibg=NONE          gui=italic
+hi vimFold	      guifg=#dee4ea		        guibg=NONE          gui=italic
 hi IncSearch      guifg=#212121           guibg=#b6b6b6
-hi LineNr         guifg=#696969           guibg=NONE
 hi ModeMsg        guifg=#8f9d6a           guibg=NONE
 hi MoreMsg        guifg=#8f9d6a           guibg=NONE
 hi NonText        guifg=#424242           guibg=NONE
-hi Search         guifg=#f3f3f3           guibg=#c9615b     gui=underline
-hi StatusLine     guifg=#9ca9b7           guibg=#424242     
-hi StatusLineNC   guifg=#9ca9b7           guibg=#212121     
-hi Visual         guifg=#212121           guibg=#9ca9b7     gui=italic
-hi WildMenu       guifg=#6c8095           guibg=#ffffff
-hi MatchParen	  guifg=#ffffff		  guibg=#6c8095     gui=NONE
-hi ErrorMsg	  guifg=#cf6a4c           guibg=NONE        gui=NONE
-hi WarningMsg	  guifg=#eedd82		  guibg=NONE        gui=NONE
-hi Title	  guifg=NONE		  guibg=NONE          gui=NONE
+hi Search         guifg=#f3f3f3           guibg=#c9615b       gui=NONE
+hi StatusLine     guifg=#a2a96f           guibg=#242424       gui=NONE
+hi StatusLineNC   guifg=#696969           guibg=#242424       gui=NONE     
+hi Visual         guifg=#888888           guibg=#202020       gui=NONE
+hi WildMenu       guifg=#eeeeee           guibg=#242424
+hi MatchParen	    guifg=#242424		        guibg=#eeeeee       gui=NONE
+hi ErrorMsg	      guifg=#cf6a4c           guibg=NONE          gui=NONE
+hi WarningMsg	    guifg=#eedd82		        guibg=NONE          gui=NONE
+hi Title	        guifg=NONE		          guibg=NONE          gui=NONE
 
 "Syntax hilight groups
 
 hi Comment        guifg=#696969           gui=italic
-hi Constant       guifg=NONE           	  gui=NONE
+hi Constant       guifg=#f0f1bf           gui=NONE
 hi Exception      guifg=#cf6a4c           gui=NONE
 hi String         guifg=#a9bdcd           gui=NONE
-hi Variable       guifg=#6E7A84           gui=NONE
+hi Variable       guifg=#91877a           gui=NONE
 hi Number         guifg=#CF6A4C           gui=NONE
 hi Define         guifg=#79849B           gui=NONE
 hi Boolean        guifg=#CF6A4C           gui=NONE
@@ -46,14 +47,14 @@ hi Identifier     guifg=#91877a           gui=NONE
 hi Statement      guifg=#79849B           gui=NONE
 hi Keyword        guifg=#cda869           gui=NONE
 hi PreProc        guifg=#79849B           gui=NONE
-hi Type           guifg=NONE		  gui=NONE		
+hi Type           guifg=NONE         		  gui=NONE		
 hi Typedef        guifg=#e5cb9c           gui=NONE
 hi Special        guifg=#a9bdcd           gui=NONE
 hi SpecialChar    guifg=#79849B           gui=NONE
 hi SpecialComment guifg=#4f94cd           gui=NONE
 hi Ignore         guifg=#848484           gui=NONE
 hi Error          guifg=#cf6a4c           guibg=NONE         gui=underline
-hi Todo           guifg=#cda869		      guibg=NONE         gui=bold
+hi Todo           guifg=#cda869		        guibg=NONE         gui=bold
 hi Underlined     guifg=NONE              gui=NONE
 hi Pmenu          guifg=#212121           guibg=#9ca9b7
 hi PmenuSel       guifg=#ffffff           guibg=#6c8095
@@ -61,8 +62,8 @@ hi PmenuSbar      guibg=#b6b6b6
 hi PmenuThumb     guifg=#424242
 
 "more groups
-hi pythonClass  guifg=#cda869 guibg=NONE gui=NONE
-hi pythonFunction  guifg=#CF6A4C guibg=NONE gui=NONE
+hi pythonClass    guifg=#cda869 guibg=NONE gui=NONE
+hi pythonFunction guifg=#CF6A4C guibg=NONE gui=NONE
 hi pythonInterpolationDelimiter  guifg=NONE guibg=NONE gui=NONE
 hi pythonSymbol  guifg=NONE guibg=NONE gui=NONE
 hi pythonBuiltin  guifg=#9ca9b7 guibg=NONE gui=NONE
@@ -80,19 +81,18 @@ hi pythonPseudoVariable  guifg=NONE guibg=NONE gui=NONE
 hi makoDelimiter  guifg=NONE guibg=NONE gui=NONE
 hi makoComment  guifg=NONE guibg=NONE gui=NONE
 "HTML
-hi htmlTag  guifg=#79849B guibg=NONE gui=NONE
-hi htmlEndTag  guifg=#79849B guibg=NONE gui=NONE
-hi htmlTagName  guifg=#79849B guibg=NONE gui=NONE
+hi link htmlTag  Variable
+hi link htmlEndTag  Variable
+hi link htmlTagName  Variable
 hi link htmlSpecialTagName htmlTag
 hi htmlArg  guifg=NONE guibg=NONE gui=NONE
 hi htmlSpecialChar  guifg=#999999 guibg=NONE gui=NONE
 hi link htmlBold htmlArg
 "Javascript
-hi javaScriptFunction  guifg=#cf6a4c guibg=NONE gui=NONE
 hi javaScriptBraces  guifg=NONE guibg=NONE gui=NONE
 hi link javaScriptType Identifier     
-hi javaScriptFunction  guifg=#D0D0A3 guibg=NONE gui=NONE  
-hi javaScriptFuncName  guifg=#e0e0e0 guibg=NONE gui=NONE
+hi javaScriptFunction  guifg=#f0f1bf guibg=NONE gui=NONE  
+hi javaScriptFuncName  guifg=NONE guibg=NONE gui=NONE
 hi link javaScriptParens javaScriptFuncName
 "yaml
 hi yamlKey  guifg=#4f94cd guibg=NONE gui=NONE
@@ -101,31 +101,31 @@ hi yamlAlias  guifg=NONE guibg=NONE gui=NONE
 hi yamlDocumentHeader  guifg=#cda869 guibg=NONE gui=NONE
 hi yamlBlockMappingKey guifg=#e0e0e0 guibg=NONE gui=NONE
 hi yamlKeyValueDelimiter guifg=#e0e0e0 guibg=NONE gui=NONE
-"CSS & LESS
-hi cssTagName  guifg=#79849B guibg=NONE gui=NONE
+"CSS, LESS, SASS
+hi link cssTagName  Variable
 hi cssURL  guifg=#a9bdcd guibg=NONE gui=NONE
-hi cssIdentifier  guifg=#79849B guibg=NONE gui=NONE
+hi link cssIdentifier  Variable
 hi cssFunctionName  guifg=NONE guibg=NONE gui=NONE
 hi cssColor  guifg=#a9bdcd guibg=NONE gui=NONE
-hi cssPseudoClassId  guifg=#79849B guibg=NONE gui=NONE
-hi cssPseudoClass  guifg=#79849B guibg=NONE gui=NONE
-hi cssClassName  guifg=#79849B guibg=NONE gui=NONE
-hi cssValueLength  guifg=#D0D0A3 guibg=NONE gui=NONE
-hi cssValueInteger  guifg=#D0D0A3 guibg=NONE gui=NONE
-hi cssValueNumber  guifg=#D0D0A3 guibg=NONE gui=NONE
+hi link cssPseudoClassId  Variable
+hi link cssPseudoClass  Variable
+hi link cssClassName Variable
+hi cssValueLength  guifg=#f0f1bf guibg=NONE gui=NONE
+hi cssValueInteger  guifg=#f0f1bf guibg=NONE gui=NONE
+hi cssValueNumber  guifg=#f0f1bf guibg=NONE gui=NONE
 hi link cssFunction   cssValueNumber
 hi link cssFunctionName cssCommonAttr
-hi cssCommonAttr  guifg=#e0e0e0 guibg=NONE gui=NONE
-hi cssBraces  guifg=#e0e0e0 guibg=NONE gui=NONE
-hi cssTextProp guifg=#e0e0e0 guibg=NONE gui=NONE
+hi cssCommonAttr  guifg=NONE guibg=NONE gui=NONE
+hi cssBraces  guifg=NONE guibg=NONE gui=NONE
+hi cssTextProp guifg=NONE guibg=NONE gui=NONE
 hi link cssMediaBlock Define
-hi cssFontDescriptorBlock guifg=#79849B guibg=NONE gui=NONE
+hi link cssFontDescriptorBlock Variable
 hi link lessVariable   Identifier
 
 "Ruby
-hi rubyConstant guifg=#D0D0A3 guibg=NONE gui=NONE
+hi rubyConstant guifg=#f0f1bf guibg=NONE gui=NONE
 hi link rubyRailsUserClass rubyConstant
-hi erubyDelimiter   guifg=#e0e0e0 guibg=NONE
+hi erubyDelimiter   guifg=#ffffff guibg=NONE
 
 "diff
 
