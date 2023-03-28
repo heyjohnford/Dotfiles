@@ -1,0 +1,45 @@
+[user]
+	name = John Ford
+	email = heyjohnford@gmail.com
+[push]
+	default = current
+[alias]
+	beamup = push origin master
+	a = add -all
+	ba = branch -a
+	bd = branch -d
+	br = branch
+	cm = commit
+	co = checkout
+	l = log --graph --pretty='%C(yellow)%h (%cr) %Cblue %an%C(magenta)%d%Creset %s'
+	last = log -1 HEAD
+	pl = pull
+	ph = push
+	rh = reset --hard
+	st = status
+  score = !git log --format=format:%an | sort | uniq -c | sort -r
+[github]
+	user = heyjohnford
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	editor = vim
+[color]
+	ui = true
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[url "https://github.com/"]
+	insteadOf = git://github.com/
+[credential]
+	helper = osxkeychain
